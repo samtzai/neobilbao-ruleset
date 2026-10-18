@@ -1,0 +1,182 @@
+\documentclass[10pt,a4paper,oneside]{book}
+
+\usepackage{neobilbao_ruleset}
+\geometry{a4paper,top=10mm,bottom=10mm,left=12mm,right=12mm,headheight=0pt}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\definecolor{Paper}{HTML}{FAF8F2}
+\definecolor{Line}{HTML}{B9C1C4}
+\definecolor{BluePale}{HTML}{E5F1FA}
+\definecolor{RustPale}{HTML}{F8E9E2}
+\definecolor{GoldPale}{HTML}{F8F1DC}
+
+\newcommand{\field}[2][\linewidth]{%
+  \begin{minipage}[t]{#1}
+  \textcolor{InkSoft}{\terminalfont\scriptsize\MakeUppercase{#2}}\par
+  \vspace{1mm}\textcolor{Line}{\rule{\linewidth}{0.45pt}}
+  \end{minipage}}
+
+\newcommand{\rulefield}[2][\linewidth]{%
+  \begin{minipage}[t]{#1}
+  \textcolor{InkSoft}{\industrialfont\scriptsize\bfseries\MakeUppercase{#2}}\par
+  \vspace{0.8mm}\textcolor{Line}{\rule{\linewidth}{0.45pt}}
+  \end{minipage}}
+
+\newcommand{\strip}[1]{%
+  \vspace{0.8mm}\noindent
+  \colorbox{CarbonDark}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
+    \textcolor{white}{\industrialfont\bfseries\small\MakeUppercase{#1}}}}\par
+  \vspace{0.8mm}}
+
+\newcommand{\checkline}[2]{%
+  \textcolor{#1}{\rule{2.4mm}{2.4mm}}\hspace{1mm}\textcolor{InkSoft}{\scriptsize #2}}
+
+\begin{document}
+\pagecolor{Paper}
+
+\noindent
+\begin{minipage}[c]{0.68\linewidth}
+  {\industrialfont\bfseries\fontsize{22}{23}\selectfont\color{CarbonDark}NEOBILBAO // 2102}\par
+  \vspace{0.5mm}
+  {\industrialfont\bfseries\small\color{OrekakRust}LOS ZÓCALOS INDUSTRIALES \textcolor{BurdinUrdin}{//} DOSSIER DE OPERARIO}
+\end{minipage}%
+\hfill
+\begin{minipage}[c]{0.28\linewidth}
+  \raggedleft
+  {\terminalfont\scriptsize\color{InkSoft}ERA CIBERPUNK OBRERA}\par
+  {\industrialfont\bfseries\large\color{BurdinUrdin}ZINA / 2102}
+\end{minipage}
+
+\vspace{1mm}
+\textcolor{OrekakRust}{\rule{\linewidth}{1.2pt}}
+\vspace{1mm}
+
+\begin{minipage}[t]{0.58\linewidth}
+  \field{Nombre del personaje / registro de fundición}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.38\linewidth}
+  \field{Jugador/a}
+\end{minipage}
+
+\vspace{0.5mm}
+\begin{minipage}[t]{0.58\linewidth}
+  \field{Arquetipo (Fundidor, Mantenimiento, Delegado, Rebotado, Médica)}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.38\linewidth}
+  \field{Casta (Langileak / Bitartekoak / Kanpokoak)}
+\end{minipage}
+
+\strip{01 // Disposición emocional (reparte: +2, +1, +1, 0, -1)}
+
+\begin{tcolorbox}[enhanced,colback=white,colframe=BurdinUrdin,boxrule=.7pt,
+  arc=0.8mm,left=4pt,right=4pt,top=2.5pt,bottom=2.5pt]
+  \begin{tabularx}{\linewidth}{@{}>{\industrialfont\bfseries\color{CarbonDark}}p{.19\linewidth}
+    >{\centering\arraybackslash}p{.13\linewidth}
+    >{\raggedright\arraybackslash\color{InkSoft}}X@{}}
+    \textcolor{BurdinUrdin}{EMOCIÓN} & \textcolor{BurdinUrdin}{MOD.} & \textcolor{BurdinUrdin}{IMPULSO Y USO PRINCIPAL EN LOS ZÓCALOS} \\
+    \arrayrulecolor{Line}\midrule
+    ENFADADO & \rule{10mm}{.4pt} & Furia obrera, fuerza bruta, resistencia térmica. Atacar / Forcejear. \\
+    ASUSTADO & \rule{10mm}{.4pt} & Supervivencia en los túneles, esquivar Tártalos. Infiltrarse / Ocultarse. \\
+    CULPABLE & \rule{10mm}{.4pt} & Peso del juramento, sabotaje de sistemas. Investigar / Hackear. \\
+    AFLIGIDO & \rule{10mm}{.4pt} & Empatía por los camaradas caídos, consuelo. Conectar / Sanar. \\
+    PACÍFICO & \rule{10mm}{.4pt} & Sangre fría bajo el calor de la fundición. Analizar / Sigilo técnico. \\
+    \textcolor{OrekakRust}{ALEGRE} & \textcolor{OrekakRust}{\bfseries X} & \textcolor{OrekakRust}{\scriptsize PERDIDO TRAS LA GUERRA DEL PLASMA Y EL ENCIERRO.} \\
+  \end{tabularx}
+  \vspace{1mm}
+  \textcolor{InkSoft}{\scriptsize En 2102, no hay lugar para la alegría en los Zócalos; el dolor y la rabia sostienen la vida.}
+\end{tcolorbox}
+
+\begin{minipage}[t]{0.48\linewidth}
+  \strip{02 // El juramento del linaje}
+  \begin{tcolorbox}[enhanced,colback=BluePale,colframe=BurdinUrdin,boxrule=.6pt,
+    arc=0.8mm,left=4pt,right=4pt,top=2.5pt,bottom=2.5pt,height=44mm]
+    \scriptsize
+    \rulefield{Nombre de tu hijo/a en la Cúpula}\par\vspace{1mm}
+    \rulefield{Último mensaje recibido del Velo}\par\vspace{1mm}
+    \textcolor{Line}{\rule{\linewidth}{.4pt}}\par\vspace{1mm}
+    \rulefield{Objeto recuerdo físico}\par\vspace{1mm}
+    \textcolor{Line}{\rule{\linewidth}{.4pt}}\par\vspace{1mm}
+    \rulefield{Cicatriz o fallo del implante del Velo}\par\vspace{1mm}
+    \checkline{BurdinUrdin}{Jaqueo sensorial}\hfill
+    \checkline{BurdinUrdin}{Tinnitus agudo}\par\vspace{0.8mm}
+    \checkline{BurdinUrdin}{Dolor fantasma}\hfill
+    \checkline{BurdinUrdin}{Laguna de memoria}
+  \end{tcolorbox}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}
+  \strip{03 // Carga (Zama) y solidaridad}
+  \begin{tcolorbox}[enhanced,colback=GoldPale,colframe=GoldDark,boxrule=.6pt,
+    arc=0.8mm,left=4pt,right=4pt,top=2.5pt,bottom=2.5pt,height=44mm]
+    {\industrialfont\bfseries\color{GoldDark}ZAMA (ESTRÉS NEUROQUÍMICO Y FÍSICO)}\par
+    \textcolor{InkSoft}{\scriptsize Empiezas en 0. Al llegar a 6: Colapso (parálisis, shock o pánico ciego).}\par
+    \vspace{2mm}
+    \begin{center}
+      \textcolor{InkSoft}{\scriptsize 0}\quad
+      \checkline{AcidSirimiri}{}\quad
+      \checkline{AcidSirimiri}{}\quad
+      \checkline{AcidSirimiri}{}\quad
+      \checkline{AcidSirimiri}{}\quad
+      \checkline{AcidSirimiri}{}\quad
+      \textcolor{OrekakRust}{\rule{2.8mm}{2.8mm}}\ \textcolor{OrekakRust}{\scriptsize 6}
+    \end{center}
+    \vspace{0.5mm}\textcolor{Line}{\rule{\linewidth}{.4pt}}\vspace{1mm}
+    {\industrialfont\bfseries\color{GoldDark}RESERVA DE AUZOLAN (SOLIDARIDAD)}\par
+    \textcolor{InkSoft}{\scriptsize Fondo común del grupo: 1 punto por jugador al inicio de sesión.}\par
+    \vspace{0.5mm}
+    {\color{InkSoft}\scriptsize
+      \checkline{GoldDark}{} \textbf{Apoyo obrero:} +1 a la tirada de un compañero.\par\vspace{0.8mm}
+      \checkline{GoldDark}{} \textbf{Caja de resistencia:} declarar un recurso o escondite en el Zócalo.\par\vspace{0.8mm}
+      \checkline{GoldDark}{} \textbf{Pausa comunal:} reducir 1 punto de Zama al grupo.}
+  \end{tcolorbox}
+\end{minipage}
+
+\strip{04 // Movimiento único de arquetipo}
+
+\begin{tcolorbox}[enhanced,colback=RustPale,colframe=OrekakRust,boxrule=.6pt,
+  arc=0.8mm,left=5pt,right=5pt,top=2.5pt,bottom=2.5pt]
+  \begin{minipage}[t]{0.32\linewidth}
+    \rulefield{Nombre del movimiento}\par\vspace{2mm}
+    \textcolor{Line}{\rule{\linewidth}{.4pt}}
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.62\linewidth}
+    \rulefield{Condición de activación y resultados (10+ / 7--9 / Fallo)}\par\vspace{2mm}
+    \textcolor{Line}{\rule{\linewidth}{.4pt}}\par\vspace{2mm}
+    \textcolor{Line}{\rule{\linewidth}{.4pt}}
+  \end{minipage}
+\end{tcolorbox}
+
+\strip{05 // Equipo industrial y etiquetas}
+
+\begin{tcolorbox}[enhanced,colback=white,colframe=CarbonDark,boxrule=.6pt,
+  arc=0.8mm,left=5pt,right=5pt,top=2.5pt,bottom=2.5pt]
+  \begin{tabularx}{\linewidth}{@{}X X@{}}
+    {\color{InkSoft}\scriptsize
+      \textbf{TRAJE DE PRESIÓN Y RESPIRADOR:}\par
+      Protección contra gases y \etiqueta{Ácido}.\par\vspace{2mm}
+      \textbf{HERRAMIENTA PESADA DE FUNDICIÓN:} \rule{16mm}{.4pt}\par
+      \etiqueta{Contundente}\ \etiqueta{Pesado}}
+    &
+    {\color{InkSoft}\scriptsize
+      \textbf{SOPLETE DE PLASMA / CORTADOR:} \rule{14mm}{.4pt}\par
+      \etiqueta{Consumible}\ \etiqueta{Peligroso}\par\vspace{2mm}
+      \textbf{IMPLANTE DEL VELO ACTIVO}\par
+      Proyección holográfica en el visor.}
+  \end{tabularx}
+  \vspace{2.5mm}\textcolor{Line}{\rule{\linewidth}{.4pt}}\vspace{1mm}
+  \rulefield{Equipo adicional / raciones de aire / herramienta de sindicato}
+  \vspace{2mm}\textcolor{InkSoft}{\scriptsize Condiciones activas: \rule{40mm}{.4pt}}
+\end{tcolorbox}
+
+\vfill
+\noindent
+\begin{minipage}[c]{0.7\linewidth}
+  {\terminalfont\scriptsize\color{InkSoft}SISTEMA ZINA // HOJA OFICIAL DE PERSONAJE // AMBIENTACIÓN 2102}\par
+  {\industrialfont\bfseries\scriptsize\color{OrekakRust}«NACEMOS, TRABAJAMOS Y MORIMOS EN LA OSCURIDAD.»}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.25\linewidth}
+  \raggedleft{\industrialfont\bfseries\small\color{BurdinUrdin}ZINA // 2102}
+\end{minipage}
+
+\end{document}

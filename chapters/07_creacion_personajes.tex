@@ -1,0 +1,100 @@
+\chapter{Creación de Personajes}
+
+En el sistema \textbf{ZINA}, un personaje no es un compendio de habilidades matemáticas abstractas ni una lista de poderes superheroicos; es un habitante de la Margen Izquierda que intenta sobrevivir, proteger a los suyos y conservar un resto de humanidad bajo el peso aplastante del asfalto, el humo y el control corporativo.
+
+Crear un personaje en \textit{NeoBilbao} es un proceso narrativo y ágil que se realiza en grupo antes de encender la forja de la primera sesión. Sigue los siguientes seis pasos:
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{08_arquetipos_la_margen.jpg}
+  \caption{Habitantes y cuadrillas de la Margen: el pulso de la resistencia cotidiana.}
+\end{figure}
+
+\section{Paso 1: Elegir la Era de Juego}
+Antes de repartir las fichas, el grupo debe acordar en qué periodo histórico transcurrirá la crónica:
+\begin{itemize}
+    \item \textbf{2084 -- La Fractura Temprana:} La ciudad se desangra entre la vieja identidad fabril y el nacimiento del monopolio de Orekak-Corp. La tecnología es pesada, de tubos catódicos, cables expuestos, humo de carbón y lluvia ácida. Los personajes son supervivientes del colapso, detectives callejeros, hackers de terminal y trabajadores que ven cómo se alza la Cúpula.
+    \item \textbf{2102 -- El Siglo Blindado:} Dos décadas después, la Cúpula Dorada brilla sobre los rascacielos oligarcas mientras la clase obrera vive hacinada en los Zócalos de hormigón. El \textit{Velo} biomonitorea cada latido, la aleación de \textit{Burdin-Urdin} fluye por las venas de los trabajadores y el \textit{Etxearen Zina} exige entregar a los hijos como prenda de lealtad.
+\end{itemize}
+
+\section{Paso 2: Elegir un Arquetipo}
+Cada jugador elige uno de los diez arquetipos disponibles. Cada arquetipo representa un rol social, laboral y táctico dentro de la cuadrilla:
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabularx}{\textwidth}{l l X}
+\toprule
+\textbf{Era} & \textbf{Arquetipo} & \textbf{Esencia y Rol en la Cuadrilla} \\
+\midrule
+\multirow{5}{*}{\textbf{2084}} 
+& \textbf{El Sabueso} & Rastreador urbano, expolicía o cobrador cínico pero leal. \\
+& \textbf{La Biohacker} & Cirujana clandestina, artesana de ciberware reciclado. \\
+& \textbf{El Celador} & Obrero de choque, custodio vecinal, muro humano. \\
+& \textbf{La Burócrata} & Inspectora de archivos, conoce las grietas de la ley. \\
+& \textbf{El Familiar} & Núcleo emocional, buscador incansable de los desaparecidos. \\
+\midrule
+\multirow{5}{*}{\textbf{2102}} 
+& \textbf{La Fundidora} & Piloto de exoesqueleto Basajaun, fuerza bruta industrial. \\
+& \textbf{El Técnico} & Mantenedor de conductos, saboteador del Velo y la red. \\
+& \textbf{La Delegada} & Líder sindical clandestina, voz de la asamblea y huelga. \\
+& \textbf{El Rebotado} & Paria del Yermo, contrabandista y superviviente salvaje. \\
+& \textbf{La Médica} & Facultativa de policlínica fabril, alquimista del plasma. \\
+\bottomrule
+\end{tabularx}
+\caption{Los Diez Arquetipos del ZINA Engine.}
+\end{table}
+
+\section{Paso 3: Asignar las Emociones}
+Las cuatro Emociones reflejan el estado anímico y el enfoque con el que el personaje afronta la opresión. Reparte los siguientes valores entre tus cuatro estadísticas:
+\[
+\mathbf{+2}, \quad \mathbf{+1}, \quad \mathbf{0}, \quad \mathbf{-1}
+\]
+Cada arquetipo incluye una sugerencia de distribución que puedes adoptar o modificar para reflejar tu personalidad única:
+\begin{itemize}
+    \item \textbf{Rencor (Agresión, intimidación, ajuste de cuentas):} Ideal para quienes golpean primero y negocian con los nudillos ensangrentados.
+    \item \textbf{Fatiga (Resistencia, cargar peso, tozudez obrera):} Vital para quienes aguantan turnos triples y no caen ante el castigo físico.
+    \item \textbf{Esperanza (Hacking, empatía, visión táctica, fe en el mañana):} Fundamental para descifrar tecnología y mantener la luz en la oscuridad.
+    \item \textbf{Arraigo (Liderazgo, comunidad, conocimiento barrial, lealtad):} Imprescindible para movilizar a los vecinos y activar el Auzolan.
+\end{itemize}
+
+\section{Paso 4: Calcular Derivadas y Reservas}
+Anota en tu ficha los valores de las reservas vitales del sistema:
+\begin{itemize}
+    \item \textbf{Zama (Carga Psíquica y Emocional):} Comienza en \textbf{0} de un máximo de \textbf{5 casillas}. Si sufres trauma, fallas tiradas de presión o absorbes tensión ajena, marcarás casillas de Zama. Al llenar la quinta casilla, tu personaje entra en \textit{Punto de Quiebre}.
+    \item \textbf{Integridad Física (Salud):} Se compone de tres umbrales de daño:
+    \begin{enumerate}
+        \item \textit{Herida Leve:} Magulladuras, cortes de chapa. Penaliza tiradas atléticas circunstancialmente.
+        \item \textit{Herida Grave:} Huesos fracturados, quemaduras de plasma, circuito fundido. Aplica $-1$ continuo hasta recibir atención médica.
+        \item \textit{Herida Crítica:} Hemorragia masiva, daño de órganos o sobrecarga neuronal. Si no se estabiliza de inmediato con Auzolan o cirugía, causa la muerte.
+    \end{enumerate}
+    \item \textbf{Auzolan Grupal (Solidaridad Obrera):} La cuadrilla comparte una reserva inicial de \textbf{3 Puntos de Auzolan}. Cualquier miembro puede gastar puntos de esta reserva para prestar ayuda a un compañero (+1d4 a su tirada) o absorber el daño que iba a recibir otro.
+\end{itemize}
+
+\section{Paso 5: Vínculos, Deudas y Juramentos}
+Un personaje sin ataduras no tiene sentido en NeoBilbao. Durante la creación, responde en voz alta a las siguientes preguntas con el resto de la mesa:
+\begin{enumerate}
+    \item \textbf{Primer Vínculo (Compañerismo):} Escoge a otro personaje jugador. ¿Por qué le debes la vida o en qué turno de trabajo peligroso aprendisteis a confiar ciegamente el uno en el otro?
+    \item \textbf{Segundo Vínculo (Tensión o Deuda):} Escoge a otro personaje jugador. ¿Qué secreto conoces de él que podría arruinarle ante la empresa o el barrio, y por qué aún no lo has denunciado?
+    \item \textbf{El Juramento Personal (Zina):} Define una promesa inquebrantable. Ejemplo: \textit{«Sacaré a mi sobrina de los barracones de filtrado»}, \textit{«Descubriré quién firmó la orden de desalojo de Sestao»} o \textit{«Haremos que las sirenas del Alto Horno vuelvan a sonar libres»}.
+\end{enumerate}
+
+\section{Paso 6: Equipo y Wetware Inicial}
+Cada arquetipo otorga un conjunto de herramientas de trabajo, armas improvisadas o reglamentarias y piezas de cibernética inicial. Además, todo personaje comienza con:
+\begin{itemize}
+    \item Una tarjeta de identificación laboral o ficha de racionamiento con chip magnético.
+    \item Una prenda de abrigo impermeable tratada contra la lluvia cáustica (chubasquero de lona o mono de faena ignífugo).
+    \item Un objeto personal cargado de memoria: una foto analógica plastificada, un mechero de mecha grabado, una medalla de la Virgen de Begoña oxidada o una cinta magnética con canciones previas a la guerra.
+\end{itemize}
+
+\begin{CajaEjemplo}{Ejemplo Completo de Creación: Maitane, Fundidora de 2102}
+\textbf{Jugadora:} Leire decide crear a una trabajadora de primera línea en los muelles de Barakaldo.
+\begin{itemize}
+    \item \textbf{Arquetipo:} La Fundidora (2102).
+    \item \textbf{Concepto:} Exoperaria del Alto Horno 4, expulsada del turno principal por organizar un paro solidario.
+    \item \textbf{Emociones:} Rencor $+1$, Fatiga $+2$ (acostumbrada al calor asfixiante), Esperanza $-1$ (cínica tras ver tantas promesas rotas), Arraigo $+0$.
+    \item \textbf{Movimientos elegidos:} \textit{Piel de Amianto} (reduce el daño térmico y cinético) y \textit{Llave de Trinquete} (usar Fatiga en combate cuerpo a cuerpo).
+    \item \textbf{Equipo:} Exoesqueleto de carga Basajaun-MK3 desgastado, soplete térmico industrial (\textit{Daño 2, Peligrosa, Penetrante}), mono ignífugo con parches de la CNT-Reconstituida y un colgante con la llave del taquillero de su hermano ausente.
+    \item \textbf{Juramento:} \textit{«Nadie en mi cuadrilla se quedará atrapado detrás de una compuerta cerrada mientras yo tenga combustible en el soplete».}
+\end{itemize}
+\end{CajaEjemplo}

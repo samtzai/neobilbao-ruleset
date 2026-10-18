@@ -1,0 +1,182 @@
+\documentclass[10pt,a4paper,oneside]{book}
+
+\usepackage{neobilbao_ruleset}
+\geometry{a4paper,top=10mm,bottom=10mm,left=12mm,right=12mm,headheight=0pt}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\definecolor{Paper}{HTML}{FAF8F2}
+\definecolor{Line}{HTML}{B9C1C4}
+\definecolor{BluePale}{HTML}{E5F1FA}
+\definecolor{RustPale}{HTML}{F8E9E2}
+\definecolor{GoldPale}{HTML}{F8F1DC}
+
+\newcommand{\field}[2][\linewidth]{%
+  \begin{minipage}[t]{#1}
+  \textcolor{InkSoft}{\terminalfont\scriptsize\MakeUppercase{#2}}\par
+  \vspace{1mm}\textcolor{Line}{\rule{\linewidth}{0.45pt}}
+  \end{minipage}}
+
+\newcommand{\rulefield}[2][\linewidth]{%
+  \begin{minipage}[t]{#1}
+  \textcolor{InkSoft}{\industrialfont\scriptsize\bfseries\MakeUppercase{#2}}\par
+  \vspace{0.8mm}\textcolor{Line}{\rule{\linewidth}{0.45pt}}
+  \end{minipage}}
+
+\newcommand{\strip}[1]{%
+  \vspace{0.8mm}\noindent
+  \colorbox{CarbonDark}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
+    \textcolor{white}{\industrialfont\bfseries\small\MakeUppercase{#1}}}}\par
+  \vspace{0.8mm}}
+
+\newcommand{\checkline}[2]{%
+  \textcolor{#1}{\rule{2.4mm}{2.4mm}}\hspace{1mm}\textcolor{InkSoft}{\scriptsize #2}}
+
+\begin{document}
+\pagecolor{Paper}
+
+\noindent
+\begin{minipage}[c]{0.68\linewidth}
+  {\industrialfont\bfseries\fontsize{22}{23}\selectfont\color{CarbonDark}NEOBILBAO // 2084}\par
+  \vspace{0.5mm}
+  {\industrialfont\bfseries\small\color{UrdinLoteria}LA MARGEN \textcolor{OrekakRust}{//} DOSSIER DE CIUDADANO}
+\end{minipage}%
+\hfill
+\begin{minipage}[c]{0.28\linewidth}
+  \raggedleft
+  {\terminalfont\scriptsize\color{InkSoft}ERA NOIR URBANA}\par
+  {\industrialfont\bfseries\large\color{OrekakRust}ZINA / 2084}
+\end{minipage}
+
+\vspace{1mm}
+\textcolor{UrdinLoteria}{\rule{\linewidth}{1.2pt}}
+\vspace{1mm}
+
+\begin{minipage}[t]{0.58\linewidth}
+  \field{Nombre del ciudadano / alias}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.38\linewidth}
+  \field{Jugador/a}
+\end{minipage}
+
+\vspace{0.5mm}
+\begin{minipage}[t]{0.58\linewidth}
+  \field{Arquetipo (Sabueso, Biohacker, Celador, Burócrata, Familiar)}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.38\linewidth}
+  \field{Empleo oficial / Cobertura en La Margen}
+\end{minipage}
+
+\strip{01 // Disposición emocional (reparte: +2, +1, +1, 0, 0, -1)}
+
+\begin{tcolorbox}[enhanced,colback=white,colframe=UrdinLoteria,boxrule=.7pt,
+  arc=0.8mm,left=4pt,right=4pt,top=2.5pt,bottom=2.5pt]
+  \begin{tabularx}{\linewidth}{@{}>{\industrialfont\bfseries\color{CarbonDark}}p{.18\linewidth}
+    >{\centering\arraybackslash}p{.13\linewidth}
+    >{\raggedright\arraybackslash\color{InkSoft}}X@{}}
+    \textcolor{UrdinLoteria}{EMOCIÓN} & \textcolor{UrdinLoteria}{MOD.} & \textcolor{UrdinLoteria}{IMPULSO Y ACCIONES EN LA MARGEN} \\
+    \arrayrulecolor{Line}\midrule
+    ENFADADO & \rule{10mm}{.4pt} & Violencia visceral, rebelión callejera. Atacar / Forcejear. \\
+    ASUSTADO & \rule{10mm}{.4pt} & Instinto de supervivencia, huida de los Secretas. Infiltrarse / Ocultarse. \\
+    CULPABLE & \rule{10mm}{.4pt} & Carga moral, vulnerar el sistema. Hackear / Descifrar terminales. \\
+    AFLIGIDO & \rule{10mm}{.4pt} & Duelo, peso de la desgracia, conexión empática. Conectar / Sanar. \\
+    PACÍFICO & \rule{10mm}{.4pt} & Cabeza fría, fingir normalidad burocrática. Sigilo / Burocracia corporativa. \\
+    \textcolor{CrtGreen}{ALEGRE} & \rule{10mm}{.4pt} & \textcolor{CarbonDark}{\textbf{Esperanza y camaradería.}} Infundir ánimo / Resistir la desesperación. \\
+  \end{tabularx}
+  \vspace{1mm}
+  \textcolor{InkSoft}{\scriptsize En 2084, la clase trabajadora aún conserva la emoción \textbf{Alegre} como baluarte frente a la opresión corporativa.}
+\end{tcolorbox}
+
+\begin{minipage}[t]{0.48\linewidth}
+  \strip{02 // Vínculo y lujo precario}
+  \begin{tcolorbox}[enhanced,colback=BluePale,colframe=UrdinLoteria,boxrule=.6pt,
+    arc=0.8mm,left=4pt,right=4pt,top=2.5pt,bottom=2.5pt,height=44mm]
+    \scriptsize
+    \rulefield{Tu relación con el Programa Azul o un desaparecido}\par\vspace{1mm}
+    \rulefield{Tu promesa o deuda pendiente}\par\vspace{1mm}
+    \textcolor{Line}{\rule{\linewidth}{.4pt}}\par\vspace{1mm}
+    \rulefield{Tu «lujo» precario (reloj analógico, walkman, mechero)}\par\vspace{1mm}
+    \textcolor{Line}{\rule{\linewidth}{.4pt}}\par\vspace{1mm}
+    \rulefield{Cicatriz urbana o médica}\par\vspace{1mm}
+    \checkline{UrdinLoteria}{Puerto neuronal tosco}\hfill
+    \checkline{UrdinLoteria}{Asma de sirimiri}\par\vspace{0.8mm}
+    \checkline{UrdinLoteria}{Deuda de oxígeno}\hfill
+    \checkline{UrdinLoteria}{Fichado por Secretas}
+  \end{tcolorbox}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}
+  \strip{03 // Estrés (Zama) y solidaridad}
+  \begin{tcolorbox}[enhanced,colback=GoldPale,colframe=GoldDark,boxrule=.6pt,
+    arc=0.8mm,left=4pt,right=4pt,top=2.5pt,bottom=2.5pt,height=44mm]
+    {\industrialfont\bfseries\color{GoldDark}ZAMA (CARGA PSICOLÓGICA Y NEUROLÓGICA)}\par
+    \textcolor{InkSoft}{\scriptsize Empiezas en 0. Al llegar a 6: Colapso (parálisis, pánico o síncope).}\par
+    \vspace{2mm}
+    \begin{center}
+      \textcolor{InkSoft}{\scriptsize 0}\quad
+      \checkline{AcidSirimiri}{}\quad
+      \checkline{AcidSirimiri}{}\quad
+      \checkline{AcidSirimiri}{}\quad
+      \checkline{AcidSirimiri}{}\quad
+      \checkline{AcidSirimiri}{}\quad
+      \textcolor{OrekakRust}{\rule{2.8mm}{2.8mm}}\ \textcolor{OrekakRust}{\scriptsize 6}
+    \end{center}
+    \vspace{0.5mm}\textcolor{Line}{\rule{\linewidth}{.4pt}}\vspace{1mm}
+    {\industrialfont\bfseries\color{GoldDark}RESERVA DE AUZOLAN (SOLIDARIDAD)}\par
+    \textcolor{InkSoft}{\scriptsize Fondo común del grupo: 1 punto por jugador al inicio de sesión.}\par
+    \vspace{0.5mm}
+    {\color{InkSoft}\scriptsize
+      \checkline{GoldDark}{} \textbf{Apoyo vecinal:} +1 a la tirada de un compañero.\par\vspace{0.8mm}
+      \checkline{GoldDark}{} \textbf{Red de barrio:} declarar un contacto, escondite o rumor.\par\vspace{0.8mm}
+      \checkline{GoldDark}{} \textbf{Desahogo en la tasca:} aliviar 1 punto de Zama al grupo.}
+  \end{tcolorbox}
+\end{minipage}
+
+\strip{04 // Movimiento único de arquetipo}
+
+\begin{tcolorbox}[enhanced,colback=RustPale,colframe=OrekakRust,boxrule=.6pt,
+  arc=0.8mm,left=5pt,right=5pt,top=2.5pt,bottom=2.5pt]
+  \begin{minipage}[t]{0.32\linewidth}
+    \rulefield{Nombre del movimiento}\par\vspace{2mm}
+    \textcolor{Line}{\rule{\linewidth}{.4pt}}
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.62\linewidth}
+    \rulefield{Condición de activación y resultados (10+ / 7--9 / Fallo)}\par\vspace{2mm}
+    \textcolor{Line}{\rule{\linewidth}{.4pt}}\par\vspace{2mm}
+    \textcolor{Line}{\rule{\linewidth}{.4pt}}
+  \end{minipage}
+\end{tcolorbox}
+
+\strip{05 // Equipo, wetware y etiquetas urbanas}
+
+\begin{tcolorbox}[enhanced,colback=white,colframe=CarbonDark,boxrule=.6pt,
+  arc=0.8mm,left=5pt,right=5pt,top=2.5pt,bottom=2.5pt]
+  \begin{tabularx}{\linewidth}{@{}X X@{}}
+    {\color{InkSoft}\scriptsize
+      \textbf{PARAGUAS DE POLÍMERO ANTIÁCIDO}\par
+      Protege del sirimiri corrosivo.\par\vspace{2mm}
+      \textbf{MÁSCARA DE FILTRACIÓN OREKAK:}\par
+      Filtro barato de carbón activo. \etiqueta{Consumible}}
+    &
+    {\color{InkSoft}\scriptsize
+      \textbf{HERRAMIENTA / ARMA CALLEJERA:} \rule{18mm}{.4pt}\par
+      \etiqueta{Improvisado}\ \etiqueta{Clandestino}\par\vspace{2mm}
+      \textbf{EQUIPO TÉCNICO / CRT:} \rule{22mm}{.4pt}\par
+      \etiqueta{Pesado}\ \etiqueta{Ruidoso}}
+  \end{tabularx}
+  \vspace{2.5mm}\textcolor{Line}{\rule{\linewidth}{.4pt}}\vspace{1mm}
+  \rulefield{Equipo adicional / créditos / suministros médicos}
+  \vspace{2mm}\textcolor{InkSoft}{\scriptsize Condiciones activas: \rule{40mm}{.4pt}}
+\end{tcolorbox}
+
+\vfill
+\noindent
+\begin{minipage}[c]{0.7\linewidth}
+  {\terminalfont\scriptsize\color{InkSoft}SISTEMA ZINA // HOJA OFICIAL DE PERSONAJE // AMBIENTACIÓN 2084}\par
+  {\industrialfont\bfseries\scriptsize\color{UrdinLoteria}«EL TALENTO TIENE SU RECOMPENSA. EL SILENCIO TIENE SU PRECIO.»}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.25\linewidth}
+  \raggedleft{\industrialfont\bfseries\small\color{OrekakRust}ZINA // 2084}
+\end{minipage}
+
+\end{document}
