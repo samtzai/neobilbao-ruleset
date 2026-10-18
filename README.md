@@ -36,17 +36,21 @@ El universo de **NeoBilbao** se explora a través de dos épocas clave unidas po
 
 El **Sistema ZINA** es un reglamento ágil y narrativo enfocado en la tensión psicológica y el apoyo mutuo de la clase trabajadora:
 
-1. **Cuatro Emociones Dinámicas (+2, +1, 0, -1):**
-   * **Rencor:** Violencia directa, intimidación, ajuste de cuentas y furia de clase.
-   * **Fatiga:** Resistencia física, aguante al dolor, turnos dobles y tozudez obrera.
-   * **Esperanza:** Hacking, visión táctica, empatía, soldadura y fe en el mañana.
-   * **Arraigo:** Lazos comunitarios, conocimiento barrial, liderazgo y movilización de masas.
+1. **Las Seis Emociones del Sistema:**
+   * **Enfadado:** Furia de clase, rebelión callejera, fuerza bruta (*Atacar / Forcejear*).
+   * **Asustado:** Instinto de supervivencia, huida de los Secretas (*Infiltrarse / Ocultarse*).
+   * **Culpable:** Carga moral, vulnerar el sistema (*Hackear / Puentear Sistemas*).
+   * **Afligido:** Empatía, dolor por pérdidas, consuelo y tratamiento de traumas (*Manipular / Conectar*).
+   * **Pacífico:** Sangre fría, peritaje técnico, control de maquinaria o burocracia (*Analizar con Sangre Fría*).
+   * **Alegre:** Esperanza activa, humor rebelde y ánimo comunal (*Infundir Esperanza*).
+     - **Activo en 2084:** Reparto `+2, +1, +1, 0, 0, -1` entre las seis emociones.
+     - **Extinguido en 2102:** Marcado con una `X` tras la Guerra del Plasma y el Velo; reparto `+2, +1, +1, 0, -1` entre las cinco emociones restantes.
 2. **La Tirada Básica:** $2d6 + \text{Emoción}$.
-   * **10 o más (Éxito Rotundo):** Consigues tu objetivo limpiamente con ventaja añadida.
-   * **7 a 9 (Éxito Parcial):** Consigues el objetivo pero sufres una complicación, daño o coste.
-   * **6 o menos (Fallo Dramático):** Movimiento duro de la DJ y marcas 1 casilla de Zama.
-3. **Zama (Estrés / Trauma):** 5 casillas de carga emocional. Al llenar la quinta casilla, el personaje sufre un **Punto de Quiebre** (Estallido de Furia, Parálisis o Ruptura de Vínculo).
-4. **Auzolan (Solidaridad de Grupo):** Reserva común de dados (+1d4) que cualquier compañero puede activar para prestar ayuda en un momento desesperado o absorber daño ajeno.
+   * **10 o más (Éxito Total):** Consigues tu objetivo limpiamente y tomas la iniciativa en la escena.
+   * **7 a 9 (Éxito con Coste):** Consigues el objetivo pero sufres una complicación, daño o coste.
+   * **6 o menos (Fallo Dramático):** Movimiento duro del DJ y marcas 1 punto de Zama.
+3. **Zama (Carga Psicológica y Neurológica):** Escala de 0 a 6 casillas. Al alcanzar la 6.ª casilla, el personaje sufre el **Colapso** (pánico, síncope o parálisis catatónica).
+4. **Auzolan (Solidaridad Obrera):** Fondo compartido de apoyo vecinal (1 punto por jugador) que cualquier compañero puede activar para otorgar un bono de +1, absorber daño o declarar recursos comunitarios.
 
 ---
 
